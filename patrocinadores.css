@@ -1,0 +1,287 @@
+ /* Config. geral */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: 
+        linear-gradient(
+            to bottom,
+            transparent 0%,
+            transparent 45%,
+            rgba(0, 0, 0, 0.25) 70%,
+            rgba(0, 0, 0, 0.75) 100%
+        ),
+        url(fundo.gif);
+
+    background-size: cover;
+    background-attachment: fixed;
+
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 
+                 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+
+
+
+/* HEADER */
+
+header {
+    width: 100%;
+    height: 80px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    background-color: white;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 70px;
+    height: auto;
+    display: block;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav a:hover {
+    color: #aa1212;
+}
+
+
+
+
+/* caixa */
+
+.inicio {
+    width: 1450px;
+    max-width: 2000px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 5px 15px #b4a9bb;
+}
+
+/* episódios */
+
+.episodios {
+    text-align: center;
+}
+
+
+.episodio {
+    width: 250px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    overflow: hidden;
+    text-align: left;
+    box-shadow: 0 5px 15px #b4a9bb;
+    transition: 0.3s;
+}
+
+.episodio:hover {
+    transform: translateY(-8px);
+}
+
+.episodio img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+}
+
+.episodio h2 {
+    font-size: 15px;
+    margin: 15px 15px 5px;
+}
+
+.episodio p {
+    margin: 0 15px 20px;
+    color: #666;
+}
+
+/* eps */
+
+.foto {
+    text-align: center;
+}
+
+.foto img {
+    width: 200px;
+    height: auto;
+}
+
+.foto img {
+    width:800px;
+    height: auto;
+    border-radius: 15%;
+    margin-top: 15px;
+    align-items: center;
+}
+
+
+h3{
+    size: 15px;
+    color: #888888;
+    margin-top: 20px;
+}
+
+h2{
+    font-size: 18px;
+    margin: 15px 15px 5px;
+   text-align: center ;
+}
+
+.bio {
+    width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.inicio h1{
+   color: #aa1212;
+}
+
+.bio h2 {
+    font-size: 20px;
+    line-height: 1.2;
+    color: #252525;
+}
+
+.bio h3{
+    margin-top: 30px;
+    font-size: 15px;
+}
+
+.inicio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bio {
+    width: 600px;
+    text-align: center;
+}
+
+.foto {
+    width: 100%;
+    text-align: right;
+    padding-right: 100px;
+}
+
+.foto img {
+    width: 700px;
+    height: auto;
+}
+
+
+/* PATROCINADORES */
+
+.patrocinadores {
+    width: 100%;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.patrocinadores h1 {
+    color: #aa1212;
+    font-size: 30px;
+    margin-bottom: 45px;
+}
+
+.lista-patrocinadores {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 50px;
+    flex-wrap: wrap;
+    max-width: 900px;
+    margin: 0 auto;
+    
+}
+
+.lista-patrocinadores2 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 50px;
+    flex-wrap: wrap;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.patrocinador {
+    width: 120px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.icone {
+    width: 90px;
+    height: 90px;
+
+    margin: 0 auto;
+
+    border-radius: 50%;
+    overflow: hidden;
+
+    background-color: white;
+    border: 2px solid #aa1212;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    box-shadow: 0 5px 15px #b4a9bb;
+
+    transition: 0.3s;
+}
+
+.icone:hover {
+    transform: translateY(-7px);
+}
+
+.icone img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.patrocinador p {
+    margin-top: 8px;
+    font-size: 15px;
+    color: #0e0e0e;
+}
+
+footer{
+    color: #c0c0c0;
+}
